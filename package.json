@@ -1,0 +1,17 @@
+{
+  "name": "tornadoviral",
+  "version": "1.0.0",
+  "description": " main website",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass sass/main.scss assets/css/main.css -w"
+  },
+  "author": "Marvin Marinas",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^4.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

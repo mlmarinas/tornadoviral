@@ -1,14 +1,10 @@
-@import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
-@import url("main__text.css");
-@import url("main__text.scss");
 /*
 	TornadoViral by Marvin Marinas
 	tornadoviral.com | @tornadoviral
 */
-/* SASS Color Variables */
-/* SASS Box Shadow Variables */
-/* Defaults */
+@import url("font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+/* Base */
 * {
   margin: 0;
   padding: 0;
@@ -18,13 +14,16 @@ html {
   font-size: 62.5%; }
 
 body {
+  background: #FAFAFA;
+  background-image: url(/images/background.png); }
+
+body {
   line-height: 1;
   color: #888;
-  background: #FAFAFA;
   font-weight: 300;
   font-family: 'Open Sans', sans-serif; }
 
-b, strong {
+b, strong, h2, h3 {
   font-weight: 700;
   color: #3e3e3e; }
 
@@ -34,26 +33,24 @@ a {
 h2 {
   font-size: 3rem; }
 
+h3 {
+  font-size: 2.2rem; }
+
 p {
   font-size: 1.8rem; }
 
-/* Top Navigation */
-.top-nav {
-  height: 6em;
-  background-color: #282828;
+.btn:visited, .btn:link {
+  color: white;
+  background-color: #1f74ac;
+  padding: 2rem 4rem;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .top-nav__menu {
-    font-size: 1.6rem; }
-
-.menu__item {
-  display: inline;
-  font-size: 1.6rem;
-  margin: 0 2rem 0 2rem;
+  border-radius: 1rem;
+  font-size: 2.6rem;
   font-weight: 600;
-  color: white; }
+  text-align: center; }
+
+.btn:hover {
+  background-color: #217dbb; }
 
 /* Header */
 .header {
@@ -87,24 +84,41 @@ p {
     font-size: 2.6rem;
     line-height: 4rem; }
 
-.button-box__button {
-  color: white;
-  background-color: #3498db;
-  padding: 2rem 4rem;
-  width: 100%;
-  border-radius: 1rem;
-  font-size: 2.6rem;
-  font-weight: 600;
-  text-align: center; }
-
-/* Portfolio */
-.portfolio {
+/* Work Section */
+.work {
   height: 80rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 6rem; }
-  .portfolio__title, .portfolio__subtitle {
+  padding-top: 8rem; }
+  .work__title, .work__subtitle {
     margin-bottom: 2.2rem; }
-  .portfolio__subtitle {
+  .work__subtitle {
     line-height: 4rem; }
+
+.grid {
+  display: grid;
+  margin-top: 3rem;
+  grid-template-columns: repeat(3, 38rem);
+  grid-template-rows: repeat(1, 38rem);
+  grid-gap: 3rem; }
+  .grid__card {
+    background: white; }
+
+/* Top Navigation */
+.top-nav {
+  height: 6em;
+  background-color: #282828;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .top-nav__menu {
+    font-size: 1.6rem; }
+
+.menu__item {
+  display: inline;
+  font-size: 1.6rem;
+  margin: 0 2rem 0 2rem;
+  font-weight: 600;
+  color: white; }

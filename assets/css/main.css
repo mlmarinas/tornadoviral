@@ -31,13 +31,14 @@ a {
   text-decoration: none; }
 
 h2 {
-  font-size: 3rem; }
+  font-size: 4rem; }
 
 h3 {
   font-size: 2.2rem; }
 
 p {
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  line-height: 3rem; }
 
 .btn:visited, .btn:link {
   color: white;
@@ -60,7 +61,7 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  box-shadow: 0 0.3rem 0.25rem 0 rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0.4rem 0.4rem -0.2rem rgba(0, 0, 0, 0.2); }
   .header__img {
     border-radius: 100%;
     height: 30rem;
@@ -68,21 +69,20 @@ p {
     margin-left: 17rem; }
 
 .text-box {
-  line-height: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 45%;
   margin-left: 5rem; }
-  .text-box__title, .text-box__subtitle {
-    margin-bottom: 4rem; }
   .text-box__title {
     color: black;
     font-size: 5.6rem;
-    font-weight: 300; }
+    font-weight: 300;
+    margin-bottom: 4rem; }
   .text-box__subtitle {
     font-size: 2.6rem;
-    line-height: 4rem; }
+    line-height: 4rem;
+    margin-bottom: 6rem; }
 
 /* Work Section */
 .work {
@@ -93,8 +93,6 @@ p {
   padding-top: 8rem; }
   .work__title, .work__subtitle {
     margin-bottom: 2.2rem; }
-  .work__subtitle {
-    line-height: 4rem; }
 
 .grid {
   display: grid;
@@ -104,6 +102,29 @@ p {
   grid-gap: 3rem; }
   .grid__card {
     background: white; }
+
+.card {
+  box-shadow: 0 0.4rem 0.4rem -0.2rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 3.2rem 6rem 3.2rem; }
+  .card__title {
+    margin-bottom: 2rem; }
+  .card__img {
+    height: 10.4rem;
+    fill: #1f74ac; }
+  .card__excerpt {
+    text-align: center; }
+
+.fa-window-alt,
+.fa-paint-brush,
+.fa-crown {
+  font-weight: 400;
+  font-size: 10.3rem;
+  color: #1f74ac;
+  margin-bottom: 3rem; }
 
 /* Top Navigation */
 .top-nav {

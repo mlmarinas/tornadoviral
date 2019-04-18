@@ -12,6 +12,7 @@
     "gulp": "^4.0.0"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-pro": "^5.8.1",
     "node-sass": "^4.11.0"
   }
 }

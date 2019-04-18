@@ -16,23 +16,20 @@
 }
 
 .text-box {
-    line-height: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 45%;
     margin-left: 5rem;
-    &__title,
-    &__subtitle {
-        margin-bottom: 4rem;
-    }
     &__title {
         color: black;
         font-size: 5.6rem;
         font-weight: 300;
+        margin-bottom: 4rem;
     }
     &__subtitle {
         font-size: 2.6rem;
         line-height: 4rem;
+        margin-bottom: 6rem;
     }
 }

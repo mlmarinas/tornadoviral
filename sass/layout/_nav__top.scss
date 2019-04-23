@@ -10,10 +10,20 @@
         font-size: 1.6rem;
     }
 }
+
 .menu__item {
     display: inline;
+}
+
+.item__link {
+    &:visited,
+    &:link {
     font-size: 1.6rem;
     margin: 0 2rem 0 2rem;
     font-weight: 600;
     color: white;
+    }
+    &:hover {
+        color: $color__button--primary;
+    }
 }

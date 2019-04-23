@@ -14,12 +14,12 @@ html {
   font-size: 62.5%; }
 
 body {
-  background: #FAFAFA;
+  background: #fff;
   background-image: url(/images/background.png); }
 
 body {
   line-height: 1;
-  color: #888;
+  color: #444444;
   font-weight: 300;
   font-family: 'Open Sans', sans-serif; }
 
@@ -84,38 +84,71 @@ p {
     line-height: 4rem;
     margin-bottom: 6rem; }
 
+.portfolio {
+  height: 140rem;
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .portfolio__title, .portfolio__excerpt {
+    margin-bottom: 2.2rem; }
+
+.portfolio__grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 38rem);
+  grid-template-rows: repeat(2, 41rem);
+  grid-gap: 3rem; }
+
+.portfolio__card {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .portfolio__card--img {
+    width: 100%;
+    height: 21rem; }
+
+.card__text {
+  padding: 3rem;
+  text-align: center; }
+  .card__text--excerpt {
+    margin-top: 2rem; }
+
 /* Work Section */
 .work {
-  height: 80rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 8rem; }
+  padding-top: 8rem;
+  box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.15); }
   .work__title, .work__subtitle {
     margin-bottom: 2.2rem; }
+  .work__btn-box {
+    margin: 10rem; }
+  .work__btn {
+    width: 2.5rem; }
 
-.grid {
+.work__grid {
   display: grid;
   margin-top: 3rem;
-  grid-template-columns: repeat(3, 38rem);
-  grid-template-rows: repeat(1, 38rem);
+  grid-template-columns: repeat(3, 32rem);
+  grid-template-rows: repeat(1, 34rem);
   grid-gap: 3rem; }
-  .grid__card {
-    background: white; }
 
-.card {
-  box-shadow: 0 0.4rem 0.4rem -0.2rem rgba(0, 0, 0, 0.2);
+.work__card {
+  background: white;
+  box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 3.2rem 6rem 3.2rem; }
-  .card__title {
+  padding: 5rem 3.2rem 6rem 3.2rem;
+  border-radius: 0.4rem; }
+  .work__card--title {
     margin-bottom: 2rem; }
-  .card__img {
-    height: 10.4rem;
-    fill: #1f74ac; }
-  .card__excerpt {
+  .work__card--excerpt {
     text-align: center; }
 
 .fa-window-alt,
@@ -138,8 +171,13 @@ p {
     font-size: 1.6rem; }
 
 .menu__item {
-  display: inline;
+  display: inline; }
+
+.item__link:visited, .item__link:link {
   font-size: 1.6rem;
   margin: 0 2rem 0 2rem;
   font-weight: 600;
   color: white; }
+
+.item__link:hover {
+  color: #1f74ac; }

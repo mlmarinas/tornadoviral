@@ -4,6 +4,9 @@
 */
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+/* Text */
+/* Buttons */
+/* Box Shadow */
 /* Base */
 * {
   margin: 0;
@@ -53,6 +56,19 @@ p {
 .btn:hover {
   background-color: #217dbb; }
 
+.footer {
+  height: 135rem;
+  background: #2F2F2F;
+  text-align: center;
+  padding: 14rem;
+  /* Form */ }
+  .footer__title strong, .footer__excerpt {
+    color: white; }
+  .footer__title, .footer__excerpt {
+    margin-bottom: 2.6rem; }
+  .footer__form--subject, .footer__form--message {
+    display: block; }
+
 /* Header */
 .header {
   height: 64rem;
@@ -85,8 +101,7 @@ p {
     margin-bottom: 6rem; }
 
 .portfolio {
-  height: 140rem;
-  padding-top: 8rem;
+  padding: 14rem 0;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -100,19 +115,20 @@ p {
   grid-template-rows: repeat(2, 41rem);
   grid-gap: 3rem; }
 
-.portfolio__card {
+.portfolio-card {
   background: #ffffff;
   display: flex;
   flex-direction: column;
-  align-items: center; }
-  .portfolio__card--img {
+  align-items: center;
+  box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.15); }
+  .portfolio-card__img {
     width: 100%;
     height: 21rem; }
 
-.card__text {
+.card-text {
   padding: 3rem;
   text-align: center; }
-  .card__text--excerpt {
+  .card-text__excerpt {
     margin-top: 2rem; }
 
 /* Work Section */
@@ -121,23 +137,25 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 8rem;
+  padding: 14rem 0;
   box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.15); }
   .work__title, .work__subtitle {
     margin-bottom: 2.2rem; }
   .work__btn-box {
-    margin: 10rem; }
+    margin-top: 10rem; }
   .work__btn {
     width: 2.5rem; }
 
-.work__grid {
+/* Grid Container */
+.work-grid {
   display: grid;
   margin-top: 3rem;
   grid-template-columns: repeat(3, 32rem);
   grid-template-rows: repeat(1, 34rem);
   grid-gap: 3rem; }
 
-.work__card {
+/* Cards */
+.work-card {
   background: white;
   box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.15);
   display: flex;
@@ -146,13 +164,14 @@ p {
   align-items: center;
   padding: 5rem 3.2rem 6rem 3.2rem;
   border-radius: 0.4rem; }
-  .work__card--title {
+  .work-card__title {
     margin-bottom: 2rem; }
-  .work__card--excerpt {
+  .work-card__excerpt {
     text-align: center; }
 
+/* Card Icons */
 .fa-window-alt,
-.fa-paint-brush,
+.fa-paint-brush-alt,
 .fa-crown {
   font-weight: 400;
   font-size: 10.3rem;

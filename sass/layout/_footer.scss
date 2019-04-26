@@ -1,0 +1,21 @@
+.footer {
+    height: 135rem;
+    background: #2F2F2F;
+    &__title strong,
+    &__excerpt {
+        color: white;
+    }
+    text-align: center;
+    padding: 14rem;
+    &__title,
+    &__excerpt {
+        margin-bottom: 2.6rem;
+    }
+    /* Form */
+    &__form {
+        &--subject,
+        &--message {
+            display: block;
+        }
+    }
+}

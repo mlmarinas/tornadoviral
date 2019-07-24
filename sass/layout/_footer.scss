@@ -1,4 +1,7 @@
 .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 135rem;
     background: #2F2F2F;
     &__title strong,
@@ -11,11 +14,75 @@
     &__excerpt {
         margin-bottom: 2.6rem;
     }
-    /* Form */
+    //Form
     &__form {
+        display: flex;
+        flex-direction: column;
+        &--name,
+        &--email,
+        &--subject,
+        &--message {
+            padding: 0 1.3rem 0 1.3rem;
+            border-radius: 0.8rem;
+            background-color: #282828;
+            border: none; 
+            color: #bbb;
+            font-size: 2rem;
+            box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025);
+        }
+
+        &--name,
+        &--email,
+        &--subject {
+            height: 5.8rem;
+        }
+        &--name,
+        &--email,
+        &--message {
+            width: 100%;
+        }
         &--subject,
         &--message {
             display: block;
+            margin-top: 2.5rem;
+        }
+        &--email {
+            margin-left: 2.5rem;
+        }
+        &--message {
+            height: 26.0rem;
+            resize: none;
+        }
+        &--submit,
+        &--clear {
+            padding: 2rem 4.5rem;
+            border-radius: 0.8rem;
+            border: none;
+            color: white;
+            font-weight: 70rem;
+            text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
+            transition: background-color .2s ease-in-out;
+        }
+        //Buttons
+        &--submit {
+            background-color: $color__button--primary;
+        }
+        &--clear {
+            background-color: #3C3C3C;
+            margin-left: 1rem;
+        }
+        &--submit,
+        &--clear {
+            font-size: 2rem;
+            font-weight: 600;
         }
     }
 }
+.form__name-email-container {
+    display: flex;
+    justify-content: center;
+}
+.form__buttons-container {
+    margin-top: 2.5rem;
+}
+

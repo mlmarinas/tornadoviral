@@ -142,12 +142,18 @@
 <footer class="footer">
 	<h2 class="footer__title"><strong>Have me make things for you.</strong></h2>
 	<p class="footer__excerpt">Fill out the form below and let's get in touch!</p>
-	<div class="footer__form">
-		<input type="text" placeholder="Name" class="footer__form--name">
-		<input type="text" placeholder="Email" class="footer__form--email">
-		<input type="text" placeholder="Subject" class="footer__form--subject">
-		<input type="text" placeholder="Message" class="footer__form--message">
-	</div>
+	<form class="footer__form form" action="#" method="get">
+		<div class="form__name-email-container">
+			<input type="text" name="name" placeholder="Name" class="footer__form--name">
+			<input type="text" name="email" placeholder="Email" class="footer__form--email">
+		</div>
+		<input type="text" name="subject" placeholder="Subject" class="footer__form--subject">
+		<textarea name="message" placeholder="Message" class="footer__form--message"></textarea>
+		<div class="form__buttons-container">
+		<input type="submit" value="Send Message" class="footer__form--submit">
+		<input type="reset" value="Clear Form" class="footer__form--clear">
+		</div>
+	</form>
 </footer>
 
 </body>

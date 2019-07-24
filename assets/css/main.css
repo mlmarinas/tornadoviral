@@ -57,17 +57,63 @@ p {
   background-color: #217dbb; }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 135rem;
   background: #2F2F2F;
   text-align: center;
-  padding: 14rem;
-  /* Form */ }
+  padding: 14rem; }
   .footer__title strong, .footer__excerpt {
     color: white; }
   .footer__title, .footer__excerpt {
     margin-bottom: 2.6rem; }
-  .footer__form--subject, .footer__form--message {
-    display: block; }
+  .footer__form {
+    display: flex;
+    flex-direction: column; }
+    .footer__form--name, .footer__form--email, .footer__form--subject, .footer__form--message {
+      padding: 0 1.3rem 0 1.3rem;
+      border-radius: 0.8rem;
+      background-color: #282828;
+      border: none;
+      color: #bbb;
+      font-size: 2rem;
+      box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025); }
+    .footer__form--name, .footer__form--email, .footer__form--subject {
+      height: 5.8rem; }
+    .footer__form--name, .footer__form--email, .footer__form--message {
+      width: 100%; }
+    .footer__form--subject, .footer__form--message {
+      display: block;
+      margin-top: 2.5rem; }
+    .footer__form--email {
+      margin-left: 2.5rem; }
+    .footer__form--message {
+      height: 26.0rem;
+      resize: none; }
+    .footer__form--submit, .footer__form--clear {
+      padding: 2rem 4.5rem;
+      border-radius: 0.8rem;
+      border: none;
+      color: white;
+      font-weight: 70rem;
+      text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
+      transition: background-color .2s ease-in-out; }
+    .footer__form--submit {
+      background-color: #1f74ac; }
+    .footer__form--clear {
+      background-color: #3C3C3C;
+      margin-left: 1rem; }
+    .footer__form--submit, .footer__form--clear {
+      font-size: 2rem;
+      font-weight: 600; }
+
+.form__name-email-container {
+  display: flex;
+  justify-content: center; }
+
+.form__buttons-container {
+  margin-top: 2.5rem; }
 
 /* Header */
 .header {

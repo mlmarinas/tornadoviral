@@ -62,7 +62,7 @@
 				lorem dolore.</p>
 		</div>
 		<div class="work-grid__card work-card">
-			<i class="fas fa-crown"></i>">
+			<i class="fas fa-crown"></i>
 			<h3 class="work-card__title">Branding</h3>
 			<p class="work-card__excerpt">Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet
 				consequat
@@ -142,18 +142,33 @@
 <footer class="footer">
 	<h2 class="footer__title"><strong>Have me make things for you.</strong></h2>
 	<p class="footer__excerpt">Fill out the form below and let's get in touch!</p>
+	<!-- Footer Form-->
 	<form class="footer__form form" action="#" method="get">
 		<div class="form__name-email-container">
-			<input type="text" name="name" placeholder="Name" class="footer__form--name">
-			<input type="text" name="email" placeholder="Email" class="footer__form--email">
+			<input type="text" name="name" placeholder="Name" class="form__name">
+			<input type="text" name="email" placeholder="Email" class="form__email">
 		</div>
-		<input type="text" name="subject" placeholder="Subject" class="footer__form--subject">
-		<textarea name="message" placeholder="Message" class="footer__form--message"></textarea>
+		<input type="text" name="subject" placeholder="Subject" class="form__subject">
+		<textarea name="message" placeholder="Message" class="form__message"></textarea>
 		<div class="form__buttons-container">
-		<input type="submit" value="Send Message" class="footer__form--submit">
-		<input type="reset" value="Clear Form" class="footer__form--clear">
+			<input type="submit" value="Send Message" class="form__submit">
+			<input type="reset" value="Clear Form" class="form__clear">
 		</div>
 	</form>
+	<!-- Footer Form Social-->
+	<hr class="form__line--top">
+	<h3 class="form__social-header">You can find us on...</h3>
+	<div class="form__icons">
+		<i class="fab fa-twitter-square"></i>
+		<i class="fab fa-facebook-square"></i>
+		<i class="fab fa-linkedin"></i>
+		<i class="fab fa-github-square"></i>
+	</div>
+	<hr class="form__line--bottom">
+	<!--Copyright-->
+	<ul class="footer__copyright">
+		<li>© <a href="http://www.tornadoviral.com">TornadoViral</a>. All rights reserved.</li>
+	</ul>
 </footer>
 
 </body>

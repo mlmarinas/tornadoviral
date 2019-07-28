@@ -1,88 +1,152 @@
 .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1359rem;
+  background: #2f2f2f;
+  &__title strong,
+  &__excerpt {
+    color: white;
+  }
+  text-align: center;
+  padding: 14rem;
+  &__title,
+  &__excerpt {
+    margin-bottom: 2.6rem;
+  }
+  //Form
+  &__form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 135rem;
-    background: #2F2F2F;
-    &__title strong,
-    &__excerpt {
-        color: white;
-    }
-    text-align: center;
-    padding: 14rem;
-    &__title,
-    &__excerpt {
-        margin-bottom: 2.6rem;
-    }
-    //Form
-    &__form {
-        display: flex;
-        flex-direction: column;
-        &--name,
-        &--email,
-        &--subject,
-        &--message {
-            padding: 0 1.3rem 0 1.3rem;
-            border-radius: 0.8rem;
-            background-color: #282828;
-            border: none; 
-            color: #bbb;
-            font-size: 2rem;
-            box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025);
-        }
-
-        &--name,
-        &--email,
-        &--subject {
-            height: 5.8rem;
-        }
-        &--name,
-        &--email,
-        &--message {
-            width: 100%;
-        }
-        &--subject,
-        &--message {
-            display: block;
-            margin-top: 2.5rem;
-        }
-        &--email {
-            margin-left: 2.5rem;
-        }
-        &--message {
-            height: 26.0rem;
-            resize: none;
-        }
-        &--submit,
-        &--clear {
-            padding: 2rem 4.5rem;
-            border-radius: 0.8rem;
-            border: none;
-            color: white;
-            font-weight: 70rem;
-            text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
-            transition: background-color .2s ease-in-out;
-        }
-        //Buttons
-        &--submit {
-            background-color: $color__button--primary;
-        }
-        &--clear {
-            background-color: #3C3C3C;
-            margin-left: 1rem;
-        }
-        &--submit,
-        &--clear {
-            font-size: 2rem;
-            font-weight: 600;
-        }
-    }
+    width: 50%;
+  }
 }
-.form__name-email-container {
+.form {
+  //Form Input
+  &__name-email-container {
     display: flex;
     justify-content: center;
-}
-.form__buttons-container {
+  }
+  &__name,
+  &__email,
+  &__subject,
+  &__message {
+    padding: 0 1.3rem 0 1.3rem;
+    border-radius: 0.8rem;
+    background-color: #282828;
+    border: none;
+    color: #bbb;
+    font-size: 2rem;
+    box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025);
+    &:focus {
+      color: $color__button--secondary;
+    }
+  }
+  &__name,
+  &__email,
+  &__subject {
+    height: 5.8rem;
+  }
+  &__name,
+  &__email,
+  &__message {
+    width: 100%;
+  }
+  &__subject,
+  &__message {
+    display: block;
     margin-top: 2.5rem;
+  }
+  &__email {
+    margin-left: 2.5rem;
+  }
+  &__message {
+    height: 26rem;
+    resize: none;
+  }
+  //Form Buttons
+  &__buttons-container {
+    margin-top: 2.5rem;
+  }
+  &__submit,
+  &__clear {
+    padding: 2rem 4.5rem;
+    border-radius: 0.8rem;
+    border: none;
+    color: white;
+    font-weight: 70rem;
+    text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.2s ease-in-out;
+  }
+  &__submit {
+    background-color: $color__button--primary;
+    &:hover {
+      background-color: $color__button--secondary;
+    }
+  }
+
+  &__clear {
+    background-color: #3c3c3c;
+    margin-left: 1rem;
+  }
+  &__submit,
+  &__clear {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  //Social
+  &__line--top,
+  &__line--bottom {
+    width: 50%;
+    border: 0;
+    border-top: solid 1px #444;
+    border-top-color: rgba(0, 0, 0, 0.35);
+    border-top: rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
+    height: 0.1rem;
+  }
+  &__line--top {
+    margin-top: 9rem;
+  }
+  &__social-header {
+    margin-top: 5rem;
+    color: white;
+  }
+
+  //Social Icons
+  &__icons {
+    margin-bottom: 5rem;
+  }
 }
 
+.fa-twitter-square,
+.fa-facebook-square,
+.fa-linkedin,
+.fa-github-square {
+  font-weight: 400;
+  font-size: 5rem;
+  color: #444444;
+  border-radius: 0.6rem;
+  margin: 2rem 0.5rem 0 0.5rem;
+  &:hover {
+    color: $color__button--secondary;
+  }
+}
+//Copyright
+.footer__copyright {
+  text-decoration: none;
+  list-style: none;
+  font-weight: 300;
+  font-size: 1.7rem;
+  margin-top: 10rem;
+  li {
+    color: #666;
+    a:link,
+    a:visited {
+      color: #666;
+    }
+    a:hover {
+      color: $color__button--secondary;
+    }
+  }
+}
